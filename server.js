@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json());
 
 // 🔴 COLOQUE SEUS DADOS DA Z-API
-const TOKEN = "COLE_SEU_TOKEN_AQUI";
-const INSTANCE = "COLE_SEU_ID_AQUI";
-const PHONE = "5511SEUNUMERO"; // exemplo: 5511999999999
+const TOKEN = "SEU_TOKEN_REAL";
+const INSTANCE = "SEU_ID_REAL";
+const PHONE = "5511999999999";
 
 app.post("/enviar", async (req, res) => {
     const { maquina, estacao, desc, prioridade } = req.body;
